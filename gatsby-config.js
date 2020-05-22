@@ -6,6 +6,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `mr_tanj`,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `backgrounds`,

@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 export const FormGroup = styled.div`
 	color: rgb(141,141,138);
     display: block;
-	width: 50%;
+	width: 90%;
 	margin: 30px auto;
 `;
 

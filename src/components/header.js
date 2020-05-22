@@ -37,8 +37,6 @@ const StyledNavLink = styled(Nav.Link)`
 const StyledNav = styled(Nav)`
   margin: 0 auto;
   float: none;
-  background-coilor: 'red';
-
 `
 
 const Header = ({ siteTitle }) => (
@@ -46,7 +44,7 @@ const Header = ({ siteTitle }) => (
     <Navbar style={{backgroundColor: 'rgb(26,26,27)', marginBottom: '10px'}} variant="dark">
       <StyledNav>
         <Navbar.Brand href="/">{siteTitle}</Navbar.Brand>
-        <StyledNavLink href="https://www.instagram.com/mr_tanj/" target="_blank">Instagram</StyledNavLink>
+        <StyledNavLink style={{color: 'rgb(255,255,255)'}}href="https://www.instagram.com/mr_tanj/" target="_blank">Instagram</StyledNavLink>
         <StyledNavLink href="/Comics">Comics</StyledNavLink>
         <StyledNavLink href="/InkIllustrations">Ink Illustrations</StyledNavLink>
         <StyledNavLink href="/Animations">Animations</StyledNavLink>
@@ -63,7 +61,7 @@ const Header = ({ siteTitle }) => (
           <StyledDropdownItem href="/Animations">Animations</StyledDropdownItem>
           {/*<StyledDropdownItem href="/Storyboards">Storyboards</StyledDropdownItem>*/}
           <StyledDropdownItem href="/Contact">Contact</StyledDropdownItem>
-          <StyledDropdownItem href="https://instagram.com/mr_tanj/">Instagram</StyledDropdownItem>
+          <StyledDropdownItem style={{color: 'rgb(255,255,255)'}} href="https://instagram.com/mr_tanj/">Instagram</StyledDropdownItem>
         </Dropdown.Menu>
       </StyledDropdown>
     </Navbar>
