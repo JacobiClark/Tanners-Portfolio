@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
         style={{
           textAlign: "center",
           margin: `0 auto`,
-          maxWidth: 1200,
+          maxWidth: 1500,
           color: 'rgb(215,218,220)',
         }}
       >
