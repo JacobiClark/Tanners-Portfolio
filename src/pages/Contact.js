@@ -39,7 +39,7 @@ const Contact = () => {
           <Input name="name" placeholder="Your Name" type="text" />
           <Input name="email" placeholder="name@name.com" type="email" />
           <Input style={{height: '150px'}} name="message" placeholder="Message" type="text" />
-          <button>Send</button>
+          <button type="submit">Send</button>
         </form>
       </FormGroup>
     </Layout>
