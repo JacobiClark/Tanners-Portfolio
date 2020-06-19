@@ -28,27 +28,18 @@ const Contact = () => {
       <h3>More of my work can be found on my <a href="https://www.instagram.com/mr_tanj/" rel="noreferrer noopener" target="_blank">Instagram</a></h3>
       <h2>Please slide into my DMs below</h2>
       <FormGroup>
-        <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
-          <input type="hidden" name="bot-field" />
-          <input type="hidden" name="form-name" value="contact" />
-          <label>
-            Name
-            <input type="text" name="name" id="name" />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" id="email" />
-          </label>
-          <label>
-            Subject
-            <input type="text" name="subject" id="subject" />
-          </label>
-          <label>
-            Message
-            <textarea name="message" id="message" rows="5" />
-          </label>
+        <form
+          name="contact-form"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <Input type="hidden" name="bot-field" />
+          <Input type="hidden" name="form-name" value="contact" />
+          <Input name="name" placeholder="Your Name" type="text" />
+          <Input name="email" placeholder="name@name.com" type="email" />
+          <Input style={{height: '150px'}} name="message" placeholder="Message" type="text" />
           <button type="submit">Send</button>
-          <input type="reset" value="Clear" />
         </form>
       </FormGroup>
     </Layout>
