@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
-import { Navbar, Nav, Dropdown, DropdownButton, Accordion } from 'react-bootstrap';
+import { Navbar, Nav, Dropdown, Accordion } from 'react-bootstrap';
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
@@ -8,7 +8,6 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 const StyledDropdownItem = styled(Dropdown.Item)`
 	background-color: rgb(26,26,27);
   color: white;
-  margin:2px;
   text-align: center;
 `
 const StyledDropdownToggle = styled(Dropdown.Toggle)`
@@ -43,14 +42,6 @@ const StyledNavLink = styled(Nav.Link)`
 		display: inline;
 	}
 `
-const StyledDropdownButton = styled(DropdownButton)`
-  .btn-dark{
-    background-color: transparent;
-    border-color: transparent;
-    color: rgba(255, 255, 255, 0.5);
-    border: transparent;
-  }
-`
 const StyledNav = styled(Nav)`
   margin: 0 auto;
   float: none;
@@ -74,7 +65,6 @@ const Header = ({ siteTitle }) => (
           </Dropdown.Menu>
         </Dropdown>
         <StyledNavLink href="/Animations">Animations</StyledNavLink>
-        {/*<StyledNavLink href="/Storyboards">Storyboards</StyledNavLink>*/}
         <StyledNavLink href="/Contact">Contact</StyledNavLink>
       </StyledNav>
       <StyledDropdown>
@@ -85,7 +75,7 @@ const Header = ({ siteTitle }) => (
           <StyledDropdownItem href="/Comics">Comics</StyledDropdownItem>
           <StyledDropdownItem href="/InkIllustrations">Ink Illustrations</StyledDropdownItem>
           <Accordion>
-            <Accordion.Toggle style={{color: 'red', backgroundColor: 'rgb(26,26,27)', width: '100%', border: 'transparent', color: 'white', textAlign: 'center', marginLeft: ''}} eventKey="1">
+            <Accordion.Toggle style={{backgroundColor: 'rgb(26,26,27)', width: '100%', border: 'transparent', color: 'white', textAlign: 'center', marginLeft: ''}} eventKey="1">
               Storyboards
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">

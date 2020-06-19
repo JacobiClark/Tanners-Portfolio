@@ -25,7 +25,7 @@ const Contact = () => {
     <Layout>
       <SEO title="Comic Gallery by TJ"/>
       <h3>Thanks for stoppying by!</h3>
-      <h3>More of my work can be found on my <a href="https://www.instagram.com/mr_tanj/" target="_blank">Instagram</a></h3>
+      <h3>More of my work can be found on my <a href="https://www.instagram.com/mr_tanj/" rel="noreferrer noopener" target="_blank">Instagram</a></h3>
       <h2>Please slide into my DMs below</h2>
       <FormGroup>
         <form
