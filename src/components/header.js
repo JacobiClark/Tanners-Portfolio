@@ -21,6 +21,7 @@ const StyledDropdownToggle2 = styled(Dropdown.Toggle)`
 	background-color: transparent;
   border: none;
   color: rgb(141,141,141);
+  height: 40px;
 	&:after {
 		content: none;
   }
@@ -74,6 +75,9 @@ const Header = ({ siteTitle }) => (
         <Dropdown.Menu alignRight style={{backgroundColor: 'rgb(52,53,54)'}} variant="dark">
           <StyledDropdownItem href="/Comics">Comics</StyledDropdownItem>
           <StyledDropdownItem href="/InkIllustrations">Ink Illustrations</StyledDropdownItem>
+          <StyledDropdownItem href="/Animations">Animations</StyledDropdownItem>
+          <StyledDropdownItem href="/Contact">Contact</StyledDropdownItem>
+          <StyledDropdownItem style={{color: 'white'}} href="https://instagram.com/mr_tanj/">Instagram</StyledDropdownItem>
           <Accordion>
             <Accordion.Toggle style={{backgroundColor: 'rgb(26,26,27)', width: '100%', border: 'transparent', color: 'white', textAlign: 'center', marginLeft: ''}} eventKey="1">
               Storyboards
@@ -83,12 +87,8 @@ const Header = ({ siteTitle }) => (
               <StyledDropdownItem href="/Soar">Soar</StyledDropdownItem>
               <StyledDropdownItem href="/NightDrive">Night Drive</StyledDropdownItem>
             </Dropdown.Menu>
-
             </Accordion.Collapse>
           </Accordion>
-          <StyledDropdownItem href="/Animations">Animations</StyledDropdownItem>
-          <StyledDropdownItem href="/Contact">Contact</StyledDropdownItem>
-          <StyledDropdownItem style={{color: 'white'}} href="https://instagram.com/mr_tanj/">Instagram</StyledDropdownItem>
         </Dropdown.Menu>
       </StyledDropdown>
     </Navbar>

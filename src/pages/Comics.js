@@ -30,7 +30,6 @@ const Comics = () => {
               ...GatsbyImageSharpFluid
             }
           }
-          
         }
       }
     }
