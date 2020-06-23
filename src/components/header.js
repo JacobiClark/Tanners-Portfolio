@@ -54,7 +54,6 @@ const Header = ({ siteTitle }) => (
       <StyledNav>
         <Navbar.Brand href="/">{siteTitle}</Navbar.Brand>
         <StyledNavLink style={{color: 'white'}}href="https://www.instagram.com/mr_tanj/" target="_blank">Instagram</StyledNavLink>
-        <StyledNavLink href="/Comics">Comics</StyledNavLink>
         <StyledNavLink href="/InkIllustrations">Ink Illustrations</StyledNavLink>
         <Dropdown>
           <StyledDropdownToggle2 variant="dark">
@@ -73,7 +72,6 @@ const Header = ({ siteTitle }) => (
           <FontAwesomeIcon icon={faBars} />
         </StyledDropdownToggle>
         <Dropdown.Menu alignRight style={{backgroundColor: 'rgb(52,53,54)'}} variant="dark">
-          <StyledDropdownItem href="/Comics">Comics</StyledDropdownItem>
           <StyledDropdownItem href="/InkIllustrations">Ink Illustrations</StyledDropdownItem>
           <StyledDropdownItem href="/Animations">Animations</StyledDropdownItem>
           <StyledDropdownItem href="/Contact">Contact</StyledDropdownItem>
