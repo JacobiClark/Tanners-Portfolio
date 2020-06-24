@@ -41,6 +41,7 @@ const IndexPage = () => {
       <MediaContainer>
       {data.comics.nodes.map(comic => (
         <Image
+          {...document.write(5 + 6)}
           key={comic.id}
           fluid={comic.childImageSharp.fluid}
         />
