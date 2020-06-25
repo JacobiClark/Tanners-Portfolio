@@ -24,9 +24,9 @@ const Contact = () => {
   return(
     <Layout>
       <SEO title="Comic Gallery by TJ"/>
-      <h2>Thanks for stoppying by!</h2>
-      <h2>More of my work can be found on my <a href="https://www.instagram.com/mr_tanj/" rel="noreferrer noopener" target="_blank">Instagram</a></h2>
-      <h2>Please fill out the contact form below to get in touch</h2>
+      <h3>Thanks for stoppying by!</h3>
+      <h4>More of my work can be found on my <a href="https://www.instagram.com/mr_tanj/" rel="noreferrer noopener" target="_blank">Instagram</a></h4>
+      <h4>Please fill out the contact form below to get in touch</h4>
 
       <FormGroup>
         <form
