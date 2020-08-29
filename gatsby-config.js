@@ -5,6 +5,7 @@ module.exports = {
     author: `Jacob Clark`,
   },
   plugins: [
+    `gatsby-plugin-netlify-cms`,    
     {
       resolve: `gatsby-source-instagram`,
       options: {

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "arts",
+  "info": {
+    "name": "Art"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "comics": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
